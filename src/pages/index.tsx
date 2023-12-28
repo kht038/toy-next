@@ -1,10 +1,7 @@
-import LikeButton from './like-button';
+import Header from '@/components/headers';
+import LikeButton from '@/components/like-button';
  
-function Header({ title }: {title: string}) {
-  return <h1>{title ? title : 'Default title'}</h1>;
-}
- 
-export default function HomePage() {
+const HomePage = () =>  {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
  
   return (
@@ -19,3 +16,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+export default HomePage;
